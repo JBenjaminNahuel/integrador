@@ -1,0 +1,48 @@
+@keyframes fade {
+    from {opacity: 0;
+    }
+    to {opacity: 1;
+    }
+}
+@keyframes slide-up {
+    from{transform: translateX(100px);
+    }
+    to{transform: translateX(0px);}
+        
+}
+@keyframes opacity {
+    0%{transform: scale(0%);
+    }
+    100%{transform: scale(100%);}
+    }
+  
+  
+body{ 
+    animation: fade 1s alternate ;
+}
+
+header{
+    animation: opacity 2.5s;
+}
+
+h1{
+animation: opacity 5s;
+}
+
+.cajas{
+    animation: opacity 3s alternate;
+   }
+.titulosSecundarios {
+    animation: slide-up 3s;
+}
+.logos {
+    animation: slide-up 3s ;
+}
+
+@media screen and (min-width:200px) AND (max-width:850px)   {
+    .footer {
+        padding: 5px;
+        display: inline-block;
+        color:rgb(3, 15, 11);
+    }
+    }
